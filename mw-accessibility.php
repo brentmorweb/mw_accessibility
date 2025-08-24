@@ -793,11 +793,11 @@ body.mw-accessibility-active .accessibility-menu-wrap {
                 html: `
                 <div class="accessibility-menu-item accessibility-menu-item-style-2 is-font-size" style="grid-column: span 6;">
                     <div class="accessibility-menu-item-wrap">
-                        <div class="accessibility-menu-item-header"><span class="accessibility-menu-item-title"></span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M288 32.01H32c-17.67 0-32 14.31-32 32v64c0 17.69 14.33 32 32 32s32-14.31 32-32v-32h64v320H96c-17.67 0-32 14.31-32 32s14.33 32 32 32h128c17.67 0 32-14.31 32-32s-14.33-32-32-32H192v-320h64v32c0 17.69 14.33 32 32 32s32-14.31 32-32v-64C320 46.33 305.7 32.01 288 32.01zM521.4 361.4L512 370.8V141.3l9.375 9.375C527.6 156.9 535.8 160 544 160s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25l-64-64c-12.5-12.5-32.75-12.5-45.25 0l-64 64c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0L448 141.3v229.5l-9.375-9.375c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25l64 64C463.6 476.9 471.8 480 480 480s16.38-3.118 22.62-9.368l64-64c12.5-12.5 12.5-32.75 0-45.25S533.9 348.9 521.4 361.4z"></path></svg></div>
+                        <div class="accessibility-menu-item-header"><span class="accessibility-menu-item-title"></span> <span aria-hidden="true">↕</span></div>
                         <div class="accessibility-menu-item-body">
-                            <button class="accessibility-menu-item-btn _minus" aria-label="Decrease Font"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"></path></svg></button>
+                            <button class="accessibility-menu-item-btn _minus" aria-label="Decrease Font"><span aria-hidden="true">−</span></button>
                             <span class="accessibility-menu-item-display">0%</span>
-                            <button class="accessibility-menu-item-btn _plus" aria-label="Increase Font"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"></path></svg></button>
+                            <button class="accessibility-menu-item-btn _plus" aria-label="Increase Font"><span aria-hidden="true">+</span></button>
                         </div>
                     </div>
                 </div>`,
@@ -851,8 +851,7 @@ body.mw-accessibility-active .accessibility-menu-wrap {
                 title: "Greyscale",
                 html: `
                 <button class="accessibility-menu-item accessibility-menu-item-style-1 is-greyscale" style="grid-column: span 6;">
-                    <span class="accessibility-menu-item-title"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"></path></svg>
+                    <span class="accessibility-menu-item-title"></span> <span aria-hidden="true">⚪</span>
                 </button>`,
                 onload: function (_this) {
                     $(`#${SETTINGS["id-menu"]} .accessibility-menu-item.is-greyscale`).click(function () {
@@ -865,8 +864,7 @@ body.mw-accessibility-active .accessibility-menu-wrap {
                 title: "Highlight Links",
                 html: `
                 <button class="accessibility-menu-item accessibility-menu-item-style-1 is-highlight-links" style="grid-column: span 6;">
-                    <span class="accessibility-menu-item-title"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"></path></svg>
+                    <span class="accessibility-menu-item-title"></span> <span aria-hidden="true">🔗</span>
                 </button>`,
                 onload: function () {
                     $(`#${SETTINGS["id-menu"]} .accessibility-menu-item.is-highlight-links`).click(function () {
@@ -879,8 +877,7 @@ body.mw-accessibility-active .accessibility-menu-wrap {
                 title: "Accessible Font",
                 html: `
                 <button class="accessibility-menu-item accessibility-menu-item-style-1 is-accessible-font" style="grid-column: span 6;">
-                    <span class="accessibility-menu-item-title"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M416 416h-25.81L253.1 52.76c-4.688-12.47-16.57-20.76-29.91-20.76s-25.34 8.289-30.02 20.76L57.81 416H32c-17.67 0-32 14.31-32 32s14.33 32 32 32h96c17.67 0 32-14.31 32-32s-14.33-32-32-32H126.2l17.1-48h159.6l17.1 48H320c-17.67 0-32 14.31-32 32s14.33 32 32 32h96c17.67 0 32-14.31 32-32S433.7 416 416 416zM168.2 304L224 155.1l55.82 148.9H168.2z"></path></svg>
+                    <span class="accessibility-menu-item-title"></span> <span aria-hidden="true">🅰</span>
                 </button>`,
                 onload: function () {
                     $(`#${SETTINGS["id-menu"]} .accessibility-menu-item.is-accessible-font`).click(function () {
@@ -893,8 +890,7 @@ body.mw-accessibility-active .accessibility-menu-wrap {
                 title: "Text Only",
                 html: `
                 <button class="accessibility-menu-item accessibility-menu-item-style-1 is-text-only" style="grid-column: span 6;">
-                    <span class="accessibility-menu-item-title"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"></path></svg>
+                    <span class="accessibility-menu-item-title"></span> <span aria-hidden="true">📄</span>
                 </button>`,
                 onload: function () {
                     var SELECTORS = ["script", "footer", "style", "link", "img", "video", "audio", "svg", "code", "figure", "button"];
@@ -940,8 +936,7 @@ body.mw-accessibility-active .accessibility-menu-wrap {
                 title: "Reset",
                 html: `
                 <button class="accessibility-menu-item accessibility-menu-item-style-1 is-reset" style="grid-column: span 6;">
-                    <span class="accessibility-menu-item-title"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M496 48V192c0 17.69-14.31 32-32 32H320c-17.69 0-32-14.31-32-32s14.31-32 32-32h63.39c-29.97-39.7-77.25-63.78-127.6-63.78C167.7 96.22 96 167.9 96 256s71.69 159.8 159.8 159.8c34.88 0 68.03-11.03 95.88-31.94c14.22-10.53 34.22-7.75 44.81 6.375c10.59 14.16 7.75 34.22-6.375 44.81c-39.03 29.28-85.36 44.86-134.2 44.86C132.5 479.9 32 379.4 32 256s100.5-223.9 223.9-223.9c69.15 0 134 32.47 176.1 86.12V48c0-17.69 14.31-32 32-32S496 30.31 496 48z"></path></svg>
+                    <span class="accessibility-menu-item-title"></span> <span aria-hidden="true">↻</span>
                 </button>`,
                 onload: function () {
                     $(`#${SETTINGS["id-menu"]} .accessibility-menu-item.is-reset`).click(function () {
@@ -1804,7 +1799,7 @@ body.mw-accessibility-active .accessibility-menu-wrap {
         $button.setAttribute("aria-label", "Accessibility Menu");
         $button.setAttribute("aria-expanded", "false");
         $button.setAttribute("aria-controls", SETTINGS["id-menu"]);
-        $button.innerHTML = `<svg viewBox="0 0 91 88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon-our-impact-schools" transform="translate(0.000000, 0.837293)" fill="currentColor" fill-rule="nonzero"><path d="M43.5997105,87.0702085 C23.8997105,86.9702085 11.4997105,77.4702085 3.89971055,58.4702085 C-3.30028945,40.4702085 -0.300289455,19.5702085 10.9997105,9.07020851 C12.4997105,7.77020851 14.0997105,6.57020851 15.7997105,5.57020851 C44.7997105,-11.3297915 89.1997105,12.5702085 90.3997105,45.7702085 C90.5997105,49.6702085 90.3997105,54.6702085 88.1997105,57.2702085 C75.8997105,72.1702085 64.0997105,88.4702085 43.5997105,87.0702085" id="Path_15583"></path></g><g id="Group" transform="translate(19.000000, 18.000000)" fill="#FFFFFF" fill-rule="nonzero"><path d="M26,4.19354839 C38.0515242,4.19354839 47.8064516,13.9465887 47.8064516,26 C47.8064516,38.0515242 38.0534113,47.8064516 26,47.8064516 C13.9484758,47.8064516 4.19354839,38.0534113 4.19354839,26 C4.19354839,13.9484758 13.9465887,4.19354839 26,4.19354839 M26,0 C11.6405565,0 0,11.6405565 0,26 C0,40.3594435 11.6405565,52 26,52 C40.3594435,52 52,40.3594435 52,26 C52,11.6405565 40.3594435,0 26,0 Z M26,5.87096774 C14.8830081,5.87096774 5.87096774,14.8830081 5.87096774,26 C5.87096774,37.1169919 14.8830081,46.1290323 26,46.1290323 C37.1169919,46.1290323 46.1290323,37.1169919 46.1290323,26 C46.1290323,14.8830081 37.1169919,5.87096774 26,5.87096774 Z M26,10.483871 C28.0844032,10.483871 29.7741935,12.1736613 29.7741935,14.2580645 C29.7741935,16.3424677 28.0844032,18.0322581 26,18.0322581 C23.9155968,18.0322581 22.2258065,16.3424677 22.2258065,14.2580645 C22.2258065,12.1736613 23.9155968,10.483871 26,10.483871 Z M38.3438145,20.7604758 C35.3336855,21.4711774 32.5241129,22.0969597 29.7323629,22.4176613 C29.8215806,33.0087823 31.0225081,35.3182742 32.3572097,38.7327661 C32.7364113,39.7035726 32.256879,40.797879 31.2860726,41.1770806 C30.3151613,41.5562823 29.2208548,41.07675 28.8416532,40.1059435 C27.9290323,37.7672016 27.050379,35.8457177 26.5078387,31.8709677 L25.492371,31.8709677 C24.9506694,35.8392177 24.0734839,37.7637419 23.1584516,40.1059435 C22.7794597,41.0762258 21.6854677,41.5564919 20.7141371,41.1770806 C19.7433306,40.797879 19.2637984,39.7034677 19.643,38.7327661 C20.9758145,35.3212097 22.1785242,33.0147581 22.2678468,22.4176613 C19.4760968,22.0970645 16.6665242,21.4712823 13.6562903,20.7604758 C12.7546774,20.5475484 12.1963065,19.6441532 12.4092339,18.7424355 C12.6221613,17.8407177 13.5254516,17.2824516 14.4272742,17.495379 C24.5637097,19.8887419 27.4569435,19.8839194 37.5730403,17.495379 C38.4745484,17.2825565 39.3781532,17.8407177 39.5910806,18.7424355 C39.8037984,19.6441532 39.2454274,20.5476532 38.3438145,20.7604758 L38.3438145,20.7604758 Z" id="Shape"></path></g></g></svg>`;
+        $button.innerHTML = '<span aria-hidden="true">♿</span>';
 
         // menu
         var $menu = document.createElement("div");
@@ -1814,7 +1809,7 @@ body.mw-accessibility-active .accessibility-menu-wrap {
           <div class="accessibility-menu-wrap">
             <div class="accessibility-menu-header">
               <div class="accessibility-menu-logo">
-                <svg width='30px' height='30px' viewBox='0 0 30 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='universal-access-solid' transform='translate(15.000000, 15.000000) scale(-1, 1) translate(-15.000000, -15.000000) ' fill='#000000' fill-rule='nonzero'><path d='M15,0 C6.71484375,0 0,6.71484375 0,15 C0,23.2851562 6.71484375,30 15,30 C23.2851562,30 30,23.2851562 30,15 C30,6.71484375 23.2851562,0 15,0 Z M15,4.6875 C16.2943359,4.6875 17.34375,5.73691406 17.34375,7.03125 C17.34375,8.32558594 16.2949219,9.375 15,9.375 C13.7050781,9.375 12.65625,8.32617188 12.65625,7.03125 C12.65625,5.73632812 13.7050781,4.6875 15,4.6875 Z M21.9492188,12.6035156 L18.4746094,13.59375 C18.2578125,13.6582031 18.0351562,13.6875 17.8125,13.734375 L17.8125,17.3859375 L19.6078125,22.5035156 C19.8650977,23.2359375 19.4796094,24.0380859 18.7470703,24.2958984 C18.5917969,24.3515625 18.4335938,24.375 18.28125,24.375 C17.7008203,24.375 17.1568359,24.0124219 16.9546875,23.4339844 L15.4400391,19.2943359 C15.2899219,18.8840625 14.7099609,18.8840625 14.559375,19.2943359 L13.0447266,23.4339844 C12.84375,24.0117188 12.2988281,24.375 11.71875,24.375 C11.5640039,24.375 11.4075,24.3493652 11.2527539,24.29625 C10.520332,24.0380859 10.1347852,23.2362891 10.3920117,22.5038672 L12.1875,17.3847656 L12.1875,13.734375 C11.9648438,13.6875 11.7421875,13.6582031 11.5253906,13.59375 L8.05078125,12.6035156 C7.30664062,12.3867188 6.87304687,11.6132813 7.08398438,10.8632813 C7.29492188,10.1132813 8.08007812,9.6796875 8.82421875,9.89648438 L12.2958984,10.8890625 C14.0636719,11.3943164 15.9375,11.3943164 17.7046875,10.8890625 L21.1763672,9.89648438 C21.9205078,9.67494141 22.7009766,10.1143945 22.9148438,10.8615234 C23.1269531,11.6132813 22.6933594,12.3867188 21.9492188,12.6035156 Z' id='Shape'></path></g></g></svg>
+                <span aria-hidden="true">♿</span>
                 <h2>Accessibility Menu</h2>
               </div>
               <div class="accessibility-menu-close">
